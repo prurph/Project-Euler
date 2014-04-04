@@ -1,7 +1,7 @@
 require 'pry'
 
 # Get the entire contents of the file as a string without the newline
-number = IO.read('data/problem_8.txt').chomp
+number = File.read('data/problem_8.txt').chomp
 num_array = number.split("").map(&:to_i)
 
 max_prod = 0
